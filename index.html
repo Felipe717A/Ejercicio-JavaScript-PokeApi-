@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Pokémon API App</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pokémon API App</h1>
+        <div id="home" class="pokemon-search">
+            <div class="pokemon-logo">
+                <img src="pokemon_logo.jpg" alt="Logo Pokémon">
+            </div>
+            <div class="pokemon-search-bar">
+                <input type="text" id="pokemonName" placeholder="Nombre del Pokémon">
+                <button id="searchButton">Buscar</button>
+            </div>
+            <div id="error" class="hidden">Pokémon no encontrado.</div>
+        </div>
+        <div id="pokemonInfo" class="hidden">
+            <h2 id="pokemonTitle"></h2>
+            <img id="pokemonImage" src="" alt="Imagen del Pokémon">
+            <p id="pokemonDescription"></p>
+            <ul id="pokemonAbilities"></ul>
+            <p id="nextEvolution">Siguiente Evolución: </p>
+            <button id="evolveButton" class="hidden">Evolucionar</button>
+        </div>
+    </div>
+    <a id="homeLink" href="#">Volver al inicio</a>
+</body>
+<script src="app.js"></script>
+</html>
